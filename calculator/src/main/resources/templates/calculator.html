@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Spring Calculator</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/calculator.css}">
+
+</head>
+
+<body>
+
+<div class="calculator-container">
+
+    <h1>🧮 Calculator</h1>
+
+
+    <!-- Calculator Form -->
+
+    <form th:action="@{/calculator}"
+          method="post">
+
+        <!-- First Number -->
+
+        <div class="form-group">
+
+            <label for="firstNumber">
+                First Number
+            </label>
+
+            <input
+                    type="number"
+                    id="firstNumber"
+                    name="firstNumber"
+                    step="any"
+                    required
+            >
+
+        </div>
+
+
+        <!-- Operator -->
+
+        <div class="form-group">
+
+            <label for="operator">
+                Operation
+            </label>
+
+            <select id="operator"
+                    name="operator">
+
+                <option value="+">
+                    Addition (+)
+                </option>
+
+                <option value="-">
+                    Subtraction (-)
+                </option>
+
+                <option value="*">
+                    Multiplication (*)
+                </option>
+
+                <option value="/">
+                    Division (/)
+                </option>
+
+                <option value="%">
+                    Modulus (%)
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Second Number -->
+
+        <div class="form-group">
+
+            <label for="secondNumber">
+                Second Number
+            </label>
+
+            <input
+                    type="number"
+                    id="secondNumber"
+                    name="secondNumber"
+                    step="any"
+                    required
+            >
+
+        </div>
+
+
+        <!-- Calculate Button -->
+
+        <button
+                type="submit"
+                class="calculate-button">
+
+            Calculate
+
+        </button>
+
+    </form>
+
+
+    <!-- History Button -->
+
+    <div class="history-container">
+
+        <a th:href="@{/history}"
+           class="history-button">
+
+            View Calculation History
+
+        </a>
+
+    </div>
+
+
+    <!-- Result -->
+
+    <div
+            class="result"
+            th:if="${result != null}">
+
+        <h2>
+
+            Result:
+
+            <span th:text="${result}">
+        </span>
+
+        </h2>
+
+    </div>
+
+
+    <!-- Error -->
+
+    <div
+            class="error"
+            th:if="${error != null}">
+
+        <h3 th:text="${error}">
+        </h3>
+
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+
+<script th:src="@{calculator.js}"></script>
+
+</body>
+
+</html>

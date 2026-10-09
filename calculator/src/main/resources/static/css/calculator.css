@@ -1,0 +1,184 @@
+*{
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+
+min-height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+font-family: Arial, sans-serif;
+
+background-color: #f4f6f8;
+
+padding: 20px;
+
+}
+
+/* Main Calculator Container */
+
+.calculator-container {
+width: 400px;
+
+padding: 30px;
+
+background-color: white;
+
+border-radius: 12px;
+
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+}
+
+/* Heading */
+
+.calculator-container h1 {
+text-align: center;
+
+margin-top: 0;
+
+margin-bottom: 25px;
+
+}
+
+/* Form Group */
+
+.form-group {
+margin-bottom: 18px;
+}
+
+/* Labels */
+
+.form-group label {
+display: block;
+
+margin-bottom: 7px;
+
+font-weight: bold;
+
+}
+
+/* Input and Select */
+
+.form-group input,
+.form-group select {
+width: 100%;
+
+padding: 11px;
+
+border: 1px solid #ccc;
+
+border-radius: 6px;
+
+font-size: 16px;
+
+}
+
+/* Input Focus */
+
+.form-group input,
+.form-group select {
+outline: none;
+
+border-color: #555;
+
+}
+
+/* Calculate Button */
+
+.calculate-button {
+width: 100%;
+
+padding: 12px;
+
+border: none;
+
+border-radius: 6px;
+
+font-size: 16px;
+
+cursor: pointer;
+
+background-color: #333;
+
+color: white;
+
+}
+
+.calculate-button {
+opacity: 0.85;
+}
+
+/* History Button Container */
+
+.history-container {
+text-align: center;
+
+margin-top: 18px;
+
+}
+
+/* History Button */
+
+.history-button {
+display: inline-block;
+
+text-decoration: none;
+
+padding: 10px 16px;
+
+border-radius: 6px;
+
+background-color: #555;
+
+color: white;
+
+font-size: 14px;
+
+}
+
+.history-button {
+opacity: 0.85;
+}
+
+/* Result */
+
+.result {
+margin-top: 20px;
+
+padding: 15px;
+
+text-align: center;
+
+border-radius: 6px;
+
+background-color: #e8f5e9;
+
+}
+
+.result h2 {
+margin: 0;
+}
+
+/* Error */
+
+.error {
+margin-top: 20px;
+
+padding: 15px;
+
+text-align: center;
+
+border-radius: 6px;
+
+background-color: #ffebee;
+
+}
+
+.error h3 {
+margin: 0;
+}

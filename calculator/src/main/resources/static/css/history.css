@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+
+    padding: 40px 20px;
+}
+
+.history-container {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.history-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.history-header h1 {
+    margin: 0;
+}
+
+.back-button {
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border-radius: 6px;
+
+    background-color: #333;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.back-button:hover {
+    opacity: 0.85;
+}
+
+.history-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+.history-table th,
+.history-table td {
+    padding: 14px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.history-table th {
+    background-color: #f1f3f5;
+
+    font-weight: bold;
+}
+
+.history-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.operator {
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+.result {
+    font-weight: bold;
+}
+
+.empty-message {
+    text-align: center;
+
+    padding: 40px;
+
+    color: #777;
+
+    font-size: 18px;
+}
+
+.clear-button {
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 6px;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    margin-left: 8px;
+}
+
+.clear-button:hover {
+    opacity: 0.85;
+}
+
+.edit-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    background-color: #333;
+
+    color: white;
+
+    font-size: 13px;
+
+    margin-right: 5px;
+}
+
+.edit-button:hover {
+    opacity: 0.85;
+}
+
+.delete-button {
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    background-color: #dc3545;
+
+    color: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    opacity: 0.85;
+}
