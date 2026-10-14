@@ -90,7 +90,6 @@ public class CalculatorService {
     public void clearHistoryById(Long id){
 
         calculationRepository.deleteById(id);
-
     }
 
     // Edit the Calculation
@@ -101,7 +100,7 @@ public class CalculatorService {
                         new CalculatorException("Calculation not found"));
     }
 
-    public Calculation updatedCalculation(Long id, CalculatorRequest request){
+    public Calculation updateCalculation(Long id, CalculatorRequest request){
 
         Calculation calculation = getCalculationById(id);
 

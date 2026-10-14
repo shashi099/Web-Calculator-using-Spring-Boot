@@ -109,7 +109,7 @@ public class CalculatorController {
              @PathVariable Long id,
              @ModelAttribute CalculatorRequest request){
 
-        Calculation calculation = calculatorService.updatedCalculation(id, request);
+        Calculation calculation = calculatorService.updateCalculation(id, request);
         System.out.println(calculation);
         return "redirect:/history";
      }
